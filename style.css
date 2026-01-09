@@ -1,0 +1,1112 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(225, 225, 225);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#home,
+#skills,
+#project,
+#contact {
+    scroll-margin-top: 120px;
+}
+
+/* nav bar */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.1em;
+    border-radius: 30px;
+    margin-top: 10px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+    background-color: white;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.name svg {
+    width: 25px;
+    height: 25px;
+    display: block;
+    border-radius: 10px;
+}
+
+
+.tabs ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.tabs li {
+    list-style: none;
+    padding: 15px;
+}
+
+.tabs li a {
+    position: relative;
+}
+
+/* effects */
+.nav a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav a:hover,
+.nav a:focus-visible {
+    background: linear-gradient(90deg,
+            #160cd0,
+            #6f0ccb,
+            #cb0b6b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.tabs li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, #4f46e5, #9333ea, #ec4899);
+    color: transparent;
+    transition: width 0.3s ease;
+}
+
+.tabs li a:hover::after,
+.tabs li a:focus-visible::after {
+    width: 100%;
+}
+
+.name svg {
+    transition: transform 0.25s ease,
+        background-color 0.3s ease,
+}
+
+.name:hover svg {
+    transform: scale(1.15);
+    background: linear-gradient(120deg,
+            #2990cf,
+            #e342c3,
+            #d12525);
+}
+
+
+
+
+
+
+/* hero */
+#home {
+    padding: 10px;
+    margin: 120px 20px 0 20px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+    display: flex;
+    justify-content: center;
+
+}
+
+#home>.homewrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 100px;
+}
+
+.homehead {
+    font-size: 6em;
+    font-weight: bold;
+    margin: 30px auto 10px auto;
+    text-align: center;
+    background: linear-gradient(180deg, #0b074b, #5d2e89, #6e053a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+
+.homeline {
+    color: rgb(44, 43, 43);
+    text-align: center;
+}
+
+.hline {
+    color: rgb(44, 43, 43);
+    text-align: center;
+    width: 70vw;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.homeline span {
+    background: linear-gradient(180deg, #241ab1, #5d2e89, #6e053a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+    display: inline-block;
+    width: 5%;
+}
+
+.hhead {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 30px auto 30px auto;
+    text-align: center;
+    background: linear-gradient(180deg, #241ab1, #5d2e89, #6e053a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hline {
+    width: 50%;
+    color: rgb(50, 50, 50);
+}
+
+.hline u {
+    text-decoration: none;
+    background: linear-gradient(120deg, #241ab1, #5d2e89, #6e053a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.hb a {
+    text-decoration: none;
+    color: black;
+}
+
+.hb {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hb button {
+    margin: 20px auto;
+    width: 20vw;
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    cursor: pointer;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+hr {
+    border: none;
+    height: 3px;
+    width: 60%;
+    margin: 30px auto;
+    border-radius: 10px;
+    background: linear-gradient(120deg,
+            #90d4f1,
+            #c191ee,
+            #e6a2c4);
+}
+
+.about {
+    padding: 20px;
+    border-radius: 20px;
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.about2 {
+    padding: 10px;
+    background-color: white;
+    width: 60%;
+    margin: 10px auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* effects */
+.homehead:hover {
+    background: linear-gradient(120deg,
+            #2990cf,
+            #e342c3,
+            #d12525);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transform: translateY(-10px);
+}
+
+.homehead {
+    transition: background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.about2,
+.homeline,
+span,
+.about,
+.hhead,
+.hline,
+button,
+u {
+    transition: background 0.3s ease,
+        transform 0.3s ease,
+        color 0.3s ease;
+}
+
+.about2:hover span {
+    color: white;
+}
+
+.about2:hover .homeline {
+    color: white;
+}
+
+.about2:hover,
+.about:hover,
+button:hover {
+    background: linear-gradient(120deg,
+            #2990cf,
+            #e342c3,
+            #d12525);
+    transform: translateY(-5px);
+    color: white;
+}
+
+.about:hover .hhead,
+.about:hover .hline {
+    color: white;
+}
+
+.about:hover u {
+    color: rgb(56, 27, 27);
+}
+
+
+
+
+
+/* skills */
+#skills {
+    height: 120vh;
+    padding: 10px;
+    margin: 20px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+    display: flex;
+    justify-content: center;
+}
+
+#skills>.skillswrapper {
+    width: 100%;
+    max-width: 1200px;
+}
+
+.shead {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 120px auto 10px auto;
+    text-align: center;
+    background: linear-gradient(120deg, #19138a, #6b19b7, #c82375);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.sline {
+    text-align: center;
+    width: 70vw;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.head svg {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.one {
+    width: 300px;
+    max-width: 90%;
+    margin: 50px 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+
+.capsules li {
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.one:hover {
+    transform: translateY(10px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+.head svg {
+    transition: transform 0.25s ease;
+}
+
+.one:hover .head svg {
+    transform: scale(1.15);
+}
+
+
+/* effects */
+.one {
+    background: white;
+    border-radius: 20px;
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.one:hover {
+    background: linear-gradient(120deg,
+            #7ac1ee,
+            #f9acea,
+            #e36464);
+}
+
+.button svg {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 15px;
+}
+
+.button {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-content: center;
+    width: 25%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+.button a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* effects */
+.button {
+    background: white;
+    border-radius: 20px;
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.button:hover {
+    background: linear-gradient(120deg,
+            #7ac1ee,
+            #f9acea,
+            #e36464);
+    transform: translateY(10px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+.button svg {
+    transition: transform 0.25s ease;
+}
+
+.button:hover svg {
+    transform: scale(1.15);
+}
+
+
+
+
+
+/* project */
+#project {
+    padding: 10px;
+    margin: 20px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+    display: flex;
+    justify-content: center;
+}
+
+#project>.projectwrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 100px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.two {
+    width: 300px;
+    max-width: 90%;
+    margin: 50px 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+#project .two {
+    display: flex;
+    flex-direction: column;
+}
+
+.two img {
+    width: 100%;
+    height: 30vh;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.tablets {
+    padding: 10px;
+}
+
+
+.tablets ul {
+    display: flex;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.tablets li {
+    list-style: none;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 0.54em;
+    font-weight: bold;
+    background-color: whitesmoke;
+}
+
+.prohead {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 120px auto 10px auto;
+    text-align: center;
+    background: linear-gradient(120deg, #19138a, #6b19b7, #c82375);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.proline {
+    text-align: center;
+    width: 70vw;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.phead {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.pline {
+    line-height: 1.2;
+    padding: 5px;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 0.9em;
+    color: rgb(80, 78, 78);
+}
+
+
+.pb svg {
+    height: 30px;
+    width: 30px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.pb a {
+    text-decoration: none;
+    color: black;
+}
+
+.pb {
+    margin-top: auto;
+}
+
+button {
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    width: 20vw;
+    margin: 20px auto 0 auto;
+    border: none;
+    gap: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* effects */
+
+.two {
+    background: white;
+    border-radius: 20px;
+
+    transition:
+        background 0.35s ease,
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.tablets li {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
+}
+
+.two:hover .tablets li {
+    background: linear-gradient(120deg,
+            #2990cf,
+            #e342c3,
+            #d12525);
+    color: white;
+}
+
+.two:hover {
+    background: linear-gradient(120deg,
+            #7ac1ee,
+            #f9acea,
+            #e36464);
+    transform: translateY(10px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+
+.two:hover .pb svg {
+    transform: scale(1.15);
+    background: linear-gradient(120deg,
+            #2990cf,
+            #e342c3,
+            #d12525);
+}
+
+.pb svg {
+    background-color: white;
+    transition:
+        transform 0.25s ease,
+        background 0.3s ease;
+}
+
+.pb button:hover svg {
+    background: white !important;
+}
+
+
+
+
+/* contact */
+#contact {
+    padding: 10px;
+    margin: 20px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+    display: flex;
+    justify-content: center;
+}
+
+#contact>.contactwrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 100px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.three {
+    width: 300px;
+    max-width: 90%;
+    margin: 50px 10px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    height: 200px;
+}
+
+.three svg {
+    width: 70px;
+    padding: 10px;
+    height: 70px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.cohead {
+    font-size: 4em;
+    font-weight: bold;
+    margin: 120px auto 10px auto;
+    text-align: center;
+    background: linear-gradient(120deg, #19138a, #6b19b7, #c82375);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.coline {
+    text-align: center;
+    width: 40vw;
+    line-height: 1.4;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.coline u {
+    text-decoration: none;
+    background: linear-gradient(120deg, #19138a, #6b19b7, #c82375);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.chead {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.cline {
+    color: rgb(66, 64, 64);
+}
+
+/* effects */
+.three:hover {
+    background: linear-gradient(120deg,
+            #7ac1ee,
+            #f9acea,
+            #e36464);
+    transform: translateY(10px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+.three {
+    background: white;
+    border-radius: 20px;
+
+    transition:
+        background 0.35s ease,
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.chead {
+    transition:
+        transform 0.3s ease,
+        letter-spacing 0.3s ease,
+        font-size 0.3s ease;
+}
+
+.three:hover .chead {
+    transform: translateY(4px) scaleY(1.1);
+    letter-spacing: 0.6px;
+    font-size: 1.1em;
+}
+
+.cline {
+    transition: color 0.3s ease,
+        font-weight 0.3s ease;
+}
+
+.three:hover .cline {
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+    /* NAVBAR */
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .tabs ul {
+        flex-wrap: wrap;
+        gap: 5px;
+    }
+
+    /* HERO */
+    .homehead {
+        font-size: 3em;
+    }
+
+    .about2,
+    .about {
+        width: 90%;
+    }
+
+    .hline {
+        width: 90%;
+        font-size: 0.95em;
+    }
+
+    .hb {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hb button {
+        width: 80%;
+    }
+
+    /* SKILLS */
+    #skills {
+        height: auto;
+    }
+
+    .shead {
+        font-size: 2.5em;
+        margin-top: 80px;
+    }
+
+    .one {
+        width: 90%;
+    }
+
+    /* PROJECT */
+    .two {
+        width: 90%;
+    }
+
+    .two img {
+        height: auto;
+    }
+
+    button {
+        width: 80%;
+    }
+
+    /* CONTACT */
+    .three {
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+
+    .coline {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .homehead {
+        font-size: 4em;
+    }
+
+    .about2,
+    .about {
+        width: 80%;
+    }
+
+    .hline {
+        width: 80%;
+    }
+
+    .one,
+    .two,
+    .three {
+        width: 45%;
+    }
+
+    button {
+        width: 60%;
+    }
+
+    .coline {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .homehead {
+        font-size: 5em;
+    }
+
+    .hline {
+        width: 70%;
+    }
+
+    button {
+        width: 40%;
+    }
+}
+
+@media (hover: none) {
+
+    .two:hover,
+    .one:hover,
+    .three:hover {
+        transform: none;
+    }
+}
+/* Mobile fixes */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .card, .section {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* BODY */
+  body {
+    padding: 8px;
+  }
+
+  /* NAVBAR */
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 20px;
+  }
+
+  .tabs ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .tabs li {
+    padding: 8px;
+  }
+
+  /* HERO */
+  #home {
+    margin-top: 140px;
+    padding: 16px;
+  }
+
+  .homehead {
+    font-size: 2.8em;
+    line-height: 1.1;
+  }
+
+  .homeline,
+  .hline {
+    width: 95%;
+    font-size: 0.95em;
+  }
+
+  .hb {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hb button {
+    width: 90%;
+  }
+
+  /* ABOUT */
+  .about,
+  .about2 {
+    width: 95%;
+    padding: 16px;
+  }
+
+  /* SECTIONS */
+  section {
+    margin: 30px 10px;
+    padding: 16px;
+  }
+
+  /* HEADINGS */
+  .shead,
+  .prohead,
+  .cohead {
+    font-size: 2.4em;
+    margin-top: 80px;
+  }
+
+  /* CARDS */
+  .cards {
+    gap: 16px;
+  }
+
+  .one,
+  .two,
+  .three {
+    width: 95%;
+    margin: 10px auto;
+  }
+
+  /* PROJECT IMAGE */
+  .two img {
+    height: auto;
+  }
+
+  /* BUTTONS */
+  button {
+    width: 90%;
+    padding: 14px;
+    font-size: 0.95em;
+  }
+
+  .button {
+    width: 90%;
+  }
+
+  /* CONTACT */
+  .coline {
+    width: 95%;
+    font-size: 0.95em;
+  }
+
+  .three {
+    height: auto;
+  }
+}
+
+/* ================= SMALL PHONES ================= */
+@media (max-width: 480px) {
+
+  .homehead {
+    font-size: 2.4em;
+  }
+
+  .shead,
+  .prohead,
+  .cohead {
+    font-size: 2em;
+  }
+
+  .tabs li {
+    font-size: 0.9em;
+  }
+
+  button {
+    font-size: 0.9em;
+  }
+}
+
+/* ================= TOUCH DEVICES (NO HOVER JANK) ================= */
+@media (hover: none) {
+
+  .one:hover,
+  .two:hover,
+  .three:hover,
+  button:hover {
+    transform: none;
+    box-shadow: 0 8px 24px rgba(0,0,0,.12);
+  }
+
+  .nav a:hover::after {
+    width: 0;
+  }
+}
+@media (max-width: 768px) {
+
+  nav {
+    justify-content: center;
+  }
+
+  .nav {
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+}
