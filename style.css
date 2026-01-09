@@ -802,311 +802,154 @@ a {
     font-weight: bold;
 }
 
-@media (max-width: 600px) {
+/* ================= MOBILE ONLY (CLEAN & FINAL) ================= */
+@media (max-width: 768px) {
 
-    /* NAVBAR */
-    .nav {
-        flex-direction: column;
-        gap: 10px;
+    /* GLOBAL SAFETY */
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+        text-align: center;
+    }
+
+    body {
         padding: 10px;
     }
 
-    .tabs ul {
-        flex-wrap: wrap;
-        gap: 5px;
-    }
-
-    /* HERO */
-    .homehead {
-        font-size: 3em;
-    }
-
-    .about2,
-    .about {
-        width: 90%;
-    }
-
-    .hline {
-        width: 90%;
-        font-size: 0.95em;
-    }
-
-    .hb {
-        flex-direction: column;
+    /* ================= NAVBAR ================= */
+    nav {
         width: 100%;
+        left: 0;
+        right: 0;
     }
 
-    .hb button {
-        width: 80%;
+    .nav {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 12px 16px;
+        border-radius: 0;
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        box-sizing: border-box;
     }
 
-    /* SKILLS */
-    #skills {
+    .name {
+        justify-content: center;
+    }
+
+    .tabs ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    /* ================= HERO ================= */
+    #home {
+        margin: 140px auto 20px auto;
+        padding: 16px;
+    }
+
+    .homewrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .homehead {
+        font-size: 2.6em;
+    }
+
+    /* ================= ASPIRING LINE ================= */
+    .about2 {
+        width: 95%;
+        margin: 10px auto;
+        box-sizing: border-box;
+    }
+
+    .homeline {
+        width: 100%;
+        padding: 0 10px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+
+        line-height: 1.4;
+    }
+
+    /* REMOVE separator width issue */
+    .homeline span {
+        display: none;
+    }
+
+    /* ================= ABOUT ME ================= */
+    #home .about {
+        width: 100%;
+        max-width: 100%;
+        padding: 16px;
+        margin: 20px auto;
+
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    #home .about .hline {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 10px;
+
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* ================= SECTIONS ================= */
+    #skills,
+    #project,
+    #contact {
         height: auto;
+        margin: 20px auto;
+        padding: 16px;
     }
 
-    .shead {
-        font-size: 2.5em;
-        margin-top: 80px;
+    /* ================= CARDS ================= */
+    .cards {
+        justify-content: center;
     }
 
-    .one {
-        width: 90%;
-    }
-
-    /* PROJECT */
-    .two {
-        width: 90%;
+    .one,
+    .two,
+    .three {
+        width: 95%;
+        margin: 12px auto;
     }
 
     .two img {
         height: auto;
     }
 
-    button {
-        width: 80%;
+    /* ================= BUTTONS ================= */
+    .hb {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
     }
 
-    /* CONTACT */
-    .three {
+    button,
+    .hb button,
+    .button {
         width: 90%;
-        height: auto;
-        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 
+    /* ================= CONTACT ================= */
     .coline {
-        width: 90%;
+        width: 95%;
     }
-}
-
-@media (max-width: 900px) {
-
-    .homehead {
-        font-size: 4em;
-    }
-
-    .about2,
-    .about {
-        width: 80%;
-    }
-
-    .hline {
-        width: 80%;
-    }
-
-    .one,
-    .two,
-    .three {
-        width: 45%;
-    }
-
-    button {
-        width: 60%;
-    }
-
-    .coline {
-        width: 70%;
-    }
-}
-
-@media (max-width: 1200px) {
-
-    .homehead {
-        font-size: 5em;
-    }
-
-    .hline {
-        width: 70%;
-    }
-
-    button {
-        width: 40%;
-    }
-}
-
-@media (hover: none) {
-
-    .two:hover,
-    .one:hover,
-    .three:hover {
-        transform: none;
-    }
-}
-/* Mobile fixes */
-@media (max-width: 768px) {
-  body {
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .card, .section {
-    padding: 16px;
-    margin-bottom: 16px;
-  }
-}
-
-@media (max-width: 768px) {
-
-  /* BODY */
-  body {
-    padding: 8px;
-  }
-
-  /* NAVBAR */
-  .nav {
-    flex-direction: column;
-    gap: 10px;
-    padding: 12px;
-    border-radius: 20px;
-  }
-
-  .tabs ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px;
-  }
-
-  .tabs li {
-    padding: 8px;
-  }
-
-  /* HERO */
-  #home {
-    margin-top: 140px;
-    padding: 16px;
-  }
-
-  .homehead {
-    font-size: 2.8em;
-    line-height: 1.1;
-  }
-
-  .homeline,
-  .hline {
-    width: 95%;
-    font-size: 0.95em;
-  }
-
-  .hb {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .hb button {
-    width: 90%;
-  }
-
-  /* ABOUT */
-  .about,
-  .about2 {
-    width: 95%;
-    padding: 16px;
-  }
-
-  /* SECTIONS */
-  section {
-    margin: 30px 10px;
-    padding: 16px;
-  }
-
-  /* HEADINGS */
-  .shead,
-  .prohead,
-  .cohead {
-    font-size: 2.4em;
-    margin-top: 80px;
-  }
-
-  /* CARDS */
-  .cards {
-    gap: 16px;
-  }
-
-  .one,
-  .two,
-  .three {
-    width: 95%;
-    margin: 10px auto;
-  }
-
-  /* PROJECT IMAGE */
-  .two img {
-    height: auto;
-  }
-
-  /* BUTTONS */
-  button {
-    width: 90%;
-    padding: 14px;
-    font-size: 0.95em;
-  }
-
-  .button {
-    width: 90%;
-  }
-
-  /* CONTACT */
-  .coline {
-    width: 95%;
-    font-size: 0.95em;
-  }
-
-  .three {
-    height: auto;
-  }
-}
-
-/* ================= SMALL PHONES ================= */
-@media (max-width: 480px) {
-
-  .homehead {
-    font-size: 2.4em;
-  }
-
-  .shead,
-  .prohead,
-  .cohead {
-    font-size: 2em;
-  }
-
-  .tabs li {
-    font-size: 0.9em;
-  }
-
-  button {
-    font-size: 0.9em;
-  }
-}
-
-/* ================= TOUCH DEVICES (NO HOVER JANK) ================= */
-@media (hover: none) {
-
-  .one:hover,
-  .two:hover,
-  .three:hover,
-  button:hover {
-    transform: none;
-    box-shadow: 0 8px 24px rgba(0,0,0,.12);
-  }
-
-  .nav a:hover::after {
-    width: 0;
-  }
-}
-@media (max-width: 768px) {
-
-  nav {
-    justify-content: center;
-  }
-
-  .nav {
-    margin: 0;
-    border-radius: 0;
-    width: 100%;
-    max-width: 100%;
-  }
 }
